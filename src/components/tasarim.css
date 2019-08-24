@@ -1,0 +1,152 @@
+body{
+    font-family:  'Poppins', sans-serif; 
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.personal{
+    margin-top: 40px;
+    width: 100%;
+    border: 1 solid white;
+}
+
+
+.cardTitle{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.btn{
+    color: #00C755;
+    margin-left: 15px;
+}
+
+#tab-section{
+    margin-top: 30px;
+}
+
+#tab-section img{
+    float:left;
+}
+
+#tab-section .adress{
+    float:left;
+    width: 50%;
+}
+
+.card{
+    float:left;
+    width: 40%;
+    border: 1 solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    margin:20px;
+    border-radius: 8px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .note:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+
+
+.note{
+    float:left;
+    width:45%;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    border: 20 solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top:9em;
+    margin-left: 40px;
+    border-radius: 8px;
+    word-wrap: break-word;
+
+}
+
+.image-profile{
+    height: 90px;
+    width: 80px;
+    border-radius: 50%;
+    padding-left:15px; 
+    float:left;
+}
+
+.note h3{
+    color: #00C755;
+}
+
+#itemHeader{
+    background-color: #00C755;
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.itemInfo{
+    color:white;
+    font-size: 21px;
+    margin-left:15px;
+}
+
+.icon-plus{
+    color: #00C755;
+}
+
+
+#item1, #item2{
+    padding: 10px;
+    background-color: #F8F9FA;
+    border-bottom: 1px solid white;
+}
+
+#item1 p, #item2 p{
+    padding: 10px;
+    padding-right: 10px;
+    word-wrap: break-word;
+}
+.empty{
+    margin-left: 15px;
+}
+
+section p{
+    margin-left: 15px;
+    padding: 15px;
+}
+
+section p b{
+    margin-left: 15px;
+    padding: 15px;
+}
+
+.cardTitle{
+    margin-top:0px;
+    margin-bottom: 0px;
+}
+
+.cardParagraf{
+    margin-top:0px;
+    color: darkgrey;
+    font-size: 15px;
+}
+.note-paragraph{
+    color: darkgrey;
+    font-size: 15px;
+    padding-right: 25px
+}
+
+@media only screen and (max-width:620px){
+    .card, .note, .personal{
+        width:100%;
+    }
+}
+
