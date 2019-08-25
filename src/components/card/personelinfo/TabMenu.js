@@ -5,7 +5,6 @@ export default class TabMenu extends Component {
         return (
             <div>
                 <section id="tab-section">
-
                     <div className="tabs">
                         <input name="tabs" type="radio" id="tab-1" className="input" checked/>
                         <label for="tab-1" className="label">Address</label>
@@ -19,12 +18,11 @@ export default class TabMenu extends Component {
                         <input name="tabs" type="radio" id="tab-2" className="input"/>
                         <label for="tab-2" className="label">Subscribe</label>
                         <div className="panel">
-                            <form className="subscribe-form">
+                          <form className="subscribe-form">
                             <input type="text" placeholder="Email adress" className="subscribe-input"/>
                             <input type="button" value="Subscribe" className="subscribe-button"/>
-                            </form>
+                          </form>
                         </div>
-
                     </div>
                 </section>
             </div>
