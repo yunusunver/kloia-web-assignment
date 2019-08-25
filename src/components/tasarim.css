@@ -150,6 +150,7 @@ section p b{
     }
     .note,.card{
         margin-left: 5px;
+        margin-top:5px;
     }
 }
 
