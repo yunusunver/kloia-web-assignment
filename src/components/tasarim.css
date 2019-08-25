@@ -144,9 +144,12 @@ section p b{
     padding-right: 25px
 }
 
-@media only screen and (max-width:620px){
+@media only screen and (max-width:1000px){
     .card, .note, .personal{
         width:100%;
+    }
+    .note,.card{
+        margin-left: 5px;
     }
 }
 
