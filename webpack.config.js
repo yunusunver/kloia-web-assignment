@@ -1,8 +1,16 @@
 const path = require('path');
 const webpack = require('webpack');
 
+const { spawn } = require('child_process');
+
+// Config directories
+
+const SRC_DIR = path.resolve(__dirname, 'src');
+
+const OUTPUT_DIR = path.resolve(__dirname, 'dist');
+
 module.exports = {
-  entry: './src/index.js',
+  entry: SRC_DIR+'/index.js',
   module: {
     rules: [
       {
@@ -17,14 +25,41 @@ module.exports = {
     ],
   },
   output: {
-    path: path.join(__dirname, 'dist'),
-    publicPath: '/',
+    path: OUTPUT_DIR,
+    publicPath: '/dist/',
     filename: 'bundle.js',
   },
   devServer: {
-    contentBase: './dist',
+    contentBase: OUTPUT_DIR,
     open: true,
     hot: true,
+    stats: {
+
+      colors: true,
+
+      chunks: false,
+
+      children: false
+
+    },
+
+    before() {
+
+      spawn(
+
+        'electron',
+
+        ['./dist/main.js'],
+
+        { shell: true, env: process.env, stdio: 'inherit' }
+
+      )
+
+      .on('close', code => process.exit(0))
+
+      .on('error', spawnError => console.error(spawnError));
+
+    }
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
