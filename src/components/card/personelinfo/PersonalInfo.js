@@ -22,7 +22,7 @@ class PersonalInfo extends Component {
         return (
           <div className="personal">
             <Section/>
-            <TabMenu/>
+            
           </div>
         )
     }

@@ -8,11 +8,13 @@ export default class TabMenu extends Component {
                     <div className="tabs">
                         <input name="tabs" type="radio" id="tab-1" className="input" checked/>
                         <label for="tab-1" className="label">Address</label>
-                        <div className="panel">
+                        <div className="panel" id="panel1">
                             <img className="address-image" src="https://ingilizcebankasi.com/wp-content/uploads/ytdfghjkl%C5%9F%C3%B6%C3%A7m.jpg" />
-                            <b><p className="adress">3309 Franecki Dam Apt. 701</p>
-                            <p className="adress">London - United Kingdom</p></b>
+                            <div className="panel-grid">
+                            <div className="adress">3309 Franecki Dam Apt. 701</div>
+                            <div className="adress">London - United Kingdom</div>
                             <input type="button" value="Change" className="change-button"/>
+                            </div>
                         </div>
 
                         <input name="tabs" type="radio" id="tab-2" className="input"/>
@@ -23,6 +25,7 @@ export default class TabMenu extends Component {
                             <input type="button" value="Subscribe" className="subscribe-button"/>
                           </form>
                         </div>
+
                     </div>
                 </section>
             </div>
